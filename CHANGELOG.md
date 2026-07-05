@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added career domain: eras, leadership, and AI experience docs (with an explicit honesty rule against overstatement).
 - Added philosophy domain: build-learn-share-repeat and systems-thinking docs.
 - Added identity domain: profile and positioning docs.
 
