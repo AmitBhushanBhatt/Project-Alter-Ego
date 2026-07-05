@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added philosophy domain: build-learn-share-repeat and systems-thinking docs.
 - Added identity domain: profile and positioning docs.
 
 ## 0.1.0 - Foundation

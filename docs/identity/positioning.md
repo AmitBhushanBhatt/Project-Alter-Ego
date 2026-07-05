@@ -12,7 +12,7 @@ Founder CTO
 
 ## Underlying Identity
 
-Systems Builder — a builder of products, businesses, and intelligent systems. This is the identity that should outlast any single technology or role title. The full reasoning is developed in [docs/philosophy](../philosophy/) (systems thinking).
+Systems Builder — a builder of products, businesses, and intelligent systems. This is the identity that should outlast any single technology or role title. The full reasoning is developed in [systems-thinking.md](../philosophy/systems-thinking.md).
 
 ## Positioning Guardrails
 
