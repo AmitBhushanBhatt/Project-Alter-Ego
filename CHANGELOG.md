@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added strategy domain: resume, website, and content strategy docs.
 - Added knowledge domain: repository architecture, AI governance, and documentation standards docs.
 - Added career domain: eras, leadership, and AI experience docs (with an explicit honesty rule against overstatement).
 - Added philosophy domain: build-learn-share-repeat and systems-thinking docs.
