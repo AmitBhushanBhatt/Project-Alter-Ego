@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added identity domain: profile and positioning docs.
+
 ## 0.1.0 - Foundation
 
 - Initialized Alter Ego OS repository.
