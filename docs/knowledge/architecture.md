@@ -23,7 +23,7 @@
 **Artifact domains** — describe how to *generate* an output from the source domains, or hold generation-specific strategy. They should contain strategy/framing, not restated facts:
 
 - `docs/strategy/` — resume/website/content strategy (framing rules for generation)
-- `docs/resume/`, `docs/website/`, `docs/talks/`, `docs/content/`, `docs/consulting/` — per-artifact working notes
+- `docs/resume/`, `docs/linkedin/`, `docs/website/`, `docs/talks/`, `docs/content/`, `docs/consulting/` — per-artifact working notes
 
 ## The one rule that matters
 
