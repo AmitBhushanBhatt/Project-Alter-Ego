@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added resume generation process: format spec and reusable prompt (Tier 2 of BACKLOG.md).
 - Added BACKLOG.md: tiered roadmap for remaining long-term deliverables.
 - Added strategy domain: resume, website, and content strategy docs.
 - Added knowledge domain: repository architecture, AI governance, and documentation standards docs.
