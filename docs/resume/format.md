@@ -11,8 +11,9 @@
 7. **Career Evolution** — the four-era overview from [eras.md](../career/eras.md), useful as a condensed summary alongside or instead of the full `roles.md` list.
 8. **Leadership Highlights** — from [leadership.md](../career/leadership.md). Quantified only where the source doc already states a number; never round up or estimate.
 9. **Education** — from [education.md](../career/education.md), reverse-chronological, listed as-is; no inferred institution or year.
-10. **Certifications** — from [certifications.md](../career/certifications.md), listed as-is.
-11. **Current Focus** — the forward-looking line from [eras.md](../career/eras.md)'s 2025+ era, plus the motto from [build-learn-share-repeat.md](../philosophy/build-learn-share-repeat.md).
+10. **Certifications** — from [certifications.md](../career/certifications.md). A condensed resume keeps the Microsoft and Professional certifications sections and folds MOOCs/Trainings into a single "continuous learning" line.
+11. **Professional Affiliations** — from [affiliations.md](../career/affiliations.md), listed as-is.
+12. **Current Focus** — the forward-looking line from [eras.md](../career/eras.md)'s 2025+ era, plus the motto from [build-learn-share-repeat.md](../philosophy/build-learn-share-repeat.md).
 
 ## Hard constraints
 

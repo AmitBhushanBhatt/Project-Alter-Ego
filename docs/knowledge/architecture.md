@@ -9,6 +9,7 @@
 - `context/` — raw source material not yet distilled into a domain doc (old resumes, notes, transcripts).
 - `prompts/` — reusable prompts for generating artifacts from this repository.
 - `scripts/` / `tools/` — automation that reads this repo to produce artifacts.
+- `resume/` — the generated resume output (regenerated from `docs/resume/` + source domains, never hand-edited directly).
 - `website/` — the generated website output (or its build source, once it exists).
 
 ## Two kinds of `docs/` folders

@@ -89,7 +89,7 @@ Consulted for multiple organizations globally on digital business transformation
 
 ## Competentia — Global Digital Manager, then Global Digital Lead
 
-**July 2019 – January 2022** (2 years 7 months total)
+**July 2019 – January 2022** (2 years 7 months total, Stavanger, Norway — global scope including USA, Australia, and MEA)
 
 **Global Digital Manager, January 2021 – January 2022 (Stavanger, Norway)**
 - Owned digital strategy for Competentia globally.
