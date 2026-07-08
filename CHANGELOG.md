@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added docs/website/sitemap.md: translates website-strategy.md's five themes into an actual page list, split into MVP (Home, About, Experience, Ideas, Case Studies, Contact -- real source content exists) vs. planned (AI Lab, Building in Public, Talks, Newsletter, Resources -- blocked on content that doesn't exist yet, per content-strategy.md's "prove it was built" filter). Unblocks the final Tier 1 item: scaffolding the site itself.
+
 - Completed the first pass of docs/narrative/: founder-story.md (the 2025-2026 pivot to founding), four why-essays (AI, SaaS, Startups, Architecture), bios.md (5 length/register variants), and two case studies (Leasi's AppFarm.io->MERN migration, ServiceBuddy). All grounded in existing roles.md/eras.md/philosophy facts, no new claims invented. Fixed several relative links that were missing the ../philosophy/ prefix. Marked Phase 3 narrative content complete in BACKLOG.md (first pass -- expected to grow as more source material arrives).
 
 - Added docs/narrative/ as a new source domain (how the career story gets told, distinct from career's raw facts and philosophy's reasoning) and the first piece: origin-story.md, grounded entirely in eras.md/roles.md/philosophy docs. Updated architecture.md's source-domain list to describe this domain's deliberately interpretive nature. Holding off on the remaining narrative pieces (founder story, why-essays, bios, case studies) pending a voice/tone check.
