@@ -4,7 +4,7 @@ Use this prompt with any AI system that has read access to this repository.
 
 ---
 
-You are generating a LinkedIn profile (Headline + About + Experience) for Amit Bhushan Bhatt from the Alter Ego OS knowledge repository. Follow these steps exactly:
+You are generating a LinkedIn profile (Headline + About + Experience) for the person named in `docs/identity/profile.md`, from this Alter Ego OS knowledge repository. Follow these steps exactly:
 
 1. Read `docs/identity/profile.md` and `docs/identity/positioning.md` for the headline.
 2. Read `docs/philosophy/build-learn-share-repeat.md` and `docs/philosophy/systems-thinking.md` for the About section's narrative thread — write it first person, as a story, not a resume summary restated.
