@@ -34,13 +34,15 @@ Repeatable generation processes, not one-off hand-written docs, so they can't dr
 
 ## Related, parallel initiative — The Vault (private data layer)
 
-Not part of the tiered artifact roadmap above — a separate private system, not a generated artifact, and **not something a loop running in this repo builds**. See [ADR-0003](adr/ADR-0003-vault-architecture.md) and [vault/ARCHITECTURE.md](vault/ARCHITECTURE.md).
+Not part of the tiered artifact roadmap above — a separate private system, not a generated artifact, and **not something a loop running in this repo builds**. See [ADR-0003](adr/ADR-0003-vault-architecture.md), [vault/ARCHITECTURE.md](vault/ARCHITECTURE.md) (the "how," current pilot-sized scope), and [vault/PRD.md](vault/PRD.md) (the "what and why," long-horizon north star — not the current task list).
 
 - [x] Architecture designed and recorded (source taxonomy, pipeline stages, tech stack)
+- [x] PRD recorded (full Digital Twin/Knowledge/Memory scope, explicitly separated from Project Alter Ego's public identity and from Personal Planning Agent's agent layer)
 - [ ] ✋ Physical deployment decision (this Mac vs. NAS/dedicated server)
 - [ ] ✋ Pilot source category and the actual Vault project location — both still open
 - [ ] MCP server implementation — happens in the separate Vault project once it exists, not in `alter-ego`
 - [ ] Project Alter Ego ↔ Vault query integration — once both sides exist
+- [ ] ✋ Confirm with Personal Planning Agent's own scope whether it absorbs vault/PRD.md's "Where agents live" vision — not decided, needs a look at that project first
 
 ## Tier 3 — Content / thought leadership
 

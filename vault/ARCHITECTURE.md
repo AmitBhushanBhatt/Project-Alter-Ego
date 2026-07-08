@@ -1,6 +1,6 @@
 # Vault Architecture
 
-Design-only document. Nothing in this folder is or will be actual personal data — the Vault itself is a separate, private, local-first project (see [ADR-0003](../adr/ADR-0003-vault-architecture.md)). This describes how to build it.
+Design-only document. Nothing in this folder is or will be actual personal data — the Vault itself is a separate, private, local-first project (see [ADR-0003](../adr/ADR-0003-vault-architecture.md)). This describes how to build it. See [PRD.md](PRD.md) for the fuller "what and why" this architecture serves — this document stays intentionally narrower (the current pilot-sized scope), while the PRD is the long-horizon north star.
 
 ## Scope
 
@@ -66,7 +66,7 @@ Legacy formats (`.dbx`, `.pst`, pre-2007 binary Office) need explicit **format n
 6. **Sensitivity tagging** — every stored record gets a tag (public/professional, personal-private, highly-sensitive) that downstream access rules enforce. A query made in a "generate my resume" context should never be able to retrieve a highly-sensitive record, structurally, not just by convention.
 7. **Indexing & storage** — final load into the SQL store, the vector store, and a lightweight **provenance catalog** (source file, ingestion date, classification, sensitivity tag) for every record — the same traceability principle already used in Project Alter Ego (every resume fact traces to a source doc) applied at Vault scale.
 8. **MCP access layer** — a local MCP server exposing controlled tools over both stores, e.g. `search_documents(query)`, `query_financial_records(filter)`, `get_contact(name)`, `get_timeline(range)`. Each tool call is gated by the sensitivity tags and by which client/context is asking.
-9. **Consumption** — Project Alter Ego (or a future personal agent) calls the MCP server for what it needs. Facts meant to be public/professional get distilled and written into this repo's `docs/`, exactly as done today; everything else stays in the Vault, queried live, never duplicated into git.
+9. **Consumption** — Project Alter Ego, or an agent layer (see [PRD.md](PRD.md)'s "Where agents live" — likely Personal Planning Agent, not a new build here), calls the MCP server for what it needs. Facts meant to be public/professional get distilled and written into this repo's `docs/`, exactly as done today; everything else stays in the Vault, queried live, never duplicated into git.
 
 ## Technology stack (local-first)
 
