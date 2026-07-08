@@ -18,6 +18,7 @@ Oslo, Norway
 - GitHub: https://github.com/AmitBhushanBhatt
 - LinkedIn: https://www.linkedin.com/in/amitbhushanbhatt/
 - Email: amitbhushanbhatt@hotmail.com
+- Phone: +47 92986330
 
 ## Notes
 

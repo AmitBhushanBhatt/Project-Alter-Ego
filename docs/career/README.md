@@ -3,5 +3,8 @@
 The factual record of how the career unfolded and what it produced — as distinct from [identity](../identity/) (who Amit is) and [philosophy](../philosophy/) (why he builds).
 
 - [eras.md](eras.md) — the four career eras, 1997 to present
+- [roles.md](roles.md) — detailed company/title/dates for confirmed roles (2022+)
+- [tech-stack.md](tech-stack.md) — non-AI technology breadth (cloud/integration, app development, data)
 - [leadership.md](leadership.md) — scale and nature of leadership experience
 - [ai-experience.md](ai-experience.md) — AI experience, with an explicit honesty rule against overstatement
+- [education.md](education.md) — degrees held

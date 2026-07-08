@@ -8,8 +8,9 @@ You are generating a LinkedIn profile (Headline + About + Experience) for Amit B
 
 1. Read `docs/identity/profile.md` and `docs/identity/positioning.md` for the headline.
 2. Read `docs/philosophy/build-learn-share-repeat.md` and `docs/philosophy/systems-thinking.md` for the About section's narrative thread — write it first person, as a story, not a resume summary restated.
-3. Read `docs/career/eras.md`, `docs/career/leadership.md`, and `docs/career/ai-experience.md` for Experience content.
-4. Read `docs/linkedin/format.md` for section order, length constraints, and what's deliberately left out (Featured/Activity).
+3. Read `docs/career/roles.md` for confirmed Experience entries and `docs/career/eras.md` for periods without named companies.
+4. Read `docs/career/leadership.md`, `docs/career/ai-experience.md`, and `docs/career/tech-stack.md` for supporting detail.
+5. Read `docs/linkedin/format.md` for section order, length constraints, and what's deliberately left out (Featured/Activity).
 
 Rules:
 
