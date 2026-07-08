@@ -4,3 +4,4 @@ Beliefs and mental models that explain why Amit builds the way he does, independ
 
 - [build-learn-share-repeat.md](build-learn-share-repeat.md) — the core motto and operating loop
 - [systems-thinking.md](systems-thinking.md) — the underlying "systems builder" identity and why it's used
+- [decision-framework.md](decision-framework.md) — the practical filter for real opportunities ("strengthens or dilutes the identity?"), plus the core values it filters against
