@@ -12,15 +12,15 @@ Unblocks reuse of everything else; the repo is v1.0, the website is the next gen
 - [ ] 🤖 `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages
 - [ ] 🤖 Scaffold the `website/` implementation (Astro project per ADR-0004) — sequenced after the narrative content below, so the site launches with more than stub sections
 
-## Narrative content (Phase 3) — in progress, blocks a fuller website launch
+## Narrative content (Phase 3) — shipped, first pass
 
-New source domain, `docs/narrative/` — how the story gets told, distinct from `docs/career/` (what happened) and `docs/philosophy/` (why). Feeds the website's About/Ideas sections, plus future talks/media requests.
+New source domain, `docs/narrative/` — how the story gets told, distinct from `docs/career/` (what happened) and `docs/philosophy/` (why). Feeds the website's About/Ideas sections, plus future talks/media requests. First pass complete; will grow as more source material (Vault, further conversation) becomes available — see each doc's "How to apply" section for how to extend it.
 
-- [ ] 🤖 Origin story
-- [ ] 🤖 Founder story
-- [ ] 🤖 Why AI / Why SaaS / Why Startups / Why Architecture (short essays)
-- [ ] 🤖 Bios — short / medium / long, plus speaker and media variants
-- [ ] 🤖 1-2 case studies (e.g. Leasi's AppFarm.io→MERN migration, or ServiceBuddy) once enough distance exists to write them honestly
+- [x] Origin story
+- [x] Founder story
+- [x] Why AI / Why SaaS / Why Startups / Why Architecture (short essays)
+- [x] Bios — short / medium / long, plus speaker and media variants
+- [x] 2 case studies (Leasi's AppFarm.io→MERN migration, ServiceBuddy)
 
 ## Tier 2 — Resume & LinkedIn generation (resume shipped, LinkedIn pending)
 

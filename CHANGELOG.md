@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Completed the first pass of docs/narrative/: founder-story.md (the 2025-2026 pivot to founding), four why-essays (AI, SaaS, Startups, Architecture), bios.md (5 length/register variants), and two case studies (Leasi's AppFarm.io->MERN migration, ServiceBuddy). All grounded in existing roles.md/eras.md/philosophy facts, no new claims invented. Fixed several relative links that were missing the ../philosophy/ prefix. Marked Phase 3 narrative content complete in BACKLOG.md (first pass -- expected to grow as more source material arrives).
+
 - Added docs/narrative/ as a new source domain (how the career story gets told, distinct from career's raw facts and philosophy's reasoning) and the first piece: origin-story.md, grounded entirely in eras.md/roles.md/philosophy docs. Updated architecture.md's source-domain list to describe this domain's deliberately interpretive nature. Holding off on the remaining narrative pieces (founder story, why-essays, bios, case studies) pending a voice/tone check.
 
 - Added ADR-0004: website tech stack is Astro + Vercel, sourcing content from docs/ at build time rather than duplicating it. Unblocks Tier 1 of BACKLOG.md. Added a new "Narrative content (Phase 3)" section to BACKLOG.md (origin story, founder story, why-I-build essays, bios, case studies) as a new docs/narrative/ source domain, sequenced before the fuller website build per user's chosen order (tech decision → content → site).
