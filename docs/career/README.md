@@ -7,5 +7,6 @@ The factual record of how the career unfolded and what it produced — as distin
 - [tech-stack.md](tech-stack.md) — non-AI technology breadth (cloud/integration, app development, data)
 - [leadership.md](leadership.md) — scale and nature of leadership experience
 - [ai-experience.md](ai-experience.md) — AI experience, with an explicit honesty rule against overstatement
-- [certifications.md](certifications.md) — professional certifications
-- [education.md](education.md) — degrees held
+- [certifications.md](certifications.md) — certifications, MOOCs, and trainings
+- [affiliations.md](affiliations.md) — professional body memberships
+- [education.md](education.md) — degrees held, including in-progress

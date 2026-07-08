@@ -18,7 +18,8 @@ Oslo, Norway
 - GitHub: https://github.com/AmitBhushanBhatt
 - LinkedIn: https://www.linkedin.com/in/amitbhushanbhatt/
 - Email: amitbhushanbhatt@hotmail.com
-- Phone: +47 92986330
+- Phone: +47 92986330 (Norway, primary)
+- Phone: +91 9818795162 (India, secondary)
 
 ## Languages
 

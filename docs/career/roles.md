@@ -112,6 +112,7 @@ Consulted for multiple organizations globally on digital business transformation
 - Presales, solution architecture, and digital product management.
 - Delivered a solution for a leading Nordic client based on MongoDB, Elastic Search, and Kibana, integrated with Salesforce CRM.
 - Focus areas: omni-channel UX and marketing automation; tracked AWS, SAP, and Adobe platforms (AEM, Sitecore, Hybris, Magento, Kony) for innovation and implementation.
+- Drove solution architecture for 50+ business solutions and applications (WCM, analytics, smart shelf, API management, headless CMS, omni-channel UX, conversational UI, LOB/ERP backend integration, BaaS) across named clients including Electrolux (APAC), Nissan (Japan), Trelleborg (Norway), Senoko Energy (Singapore), CIMB Bank (Malaysia), P&G (Singapore), Tech Mahindra (Qatar), Amway (India), Kuoni (Hong Kong), and Competentia (Norway).
 
 **Delivery Manager, September 2017 – September 2018 (Ahmedabad, India)**
 - Presales (proposal creation, estimation, client pitches); technical project manager for the Senoko Energy marketing transformation project.
@@ -146,7 +147,9 @@ Consulted for multiple organizations globally on digital business transformation
 - Established offshore development center processes (Noida and Hyderabad regional support centers) from scratch — project management, services management, application lifecycle management, process definition/automation (TFS 2010/VS 2010-12), training, PAN-India vendor management, cost and resource management.
 - Managed a project portfolio using .NET, Java, C++, MS Navision (ERP), Microsoft Office, InfoPath Workflow, and SharePoint.
 - Built and managed client relationships across the USA, Brazil, Germany, Austria, UAE, Australia, Asia-Pacific (Japan, China, Korea, Australia), and India.
-- Independently managed Java, mobility, and .NET projects; designed multi-layered applications with UML use cases and activity diagrams; managed Navision ERP support and development.
+- Independently managed Java, mobility, and .NET projects; designed multi-layered applications with UML use cases and activity diagrams; managed Navision ERP support and development, leading a team of 7.
+- Expanded the captive offshore development center team from 15 to 25 people (3–4 leads reporting directly); grew managed revenue from €250,000/year (2012–13) to €350,000/year (2013–14).
+- Drove 10+ large-to-medium projects of 400+ calendar days each for the German MNC offshore center, including one sized at USD 4 million.
 
 ## Project Manager — HCL Technologies
 
@@ -183,9 +186,21 @@ Consulted for multiple organizations globally on digital business transformation
 
 **July 1997 – February 2006** (Project Manager, Technical Lead, Developer, IT Faculty, Office Assistant)
 
+**ICS, Aptech, Arena — Trainer, Faculty, Developer, 1997 – 2000 (Varanasi & Surat, India)**
 - Worked as an office assistant, developer, and IT faculty during undergraduate and master's studies, in Varanasi (hometown) and Surat, Gujarat.
-- 5 years with GITI/CDAC as developer/lead and project manager, developing web applications (.NET, ASP.NET, C#) and custom ERP software (VB 5.0/6.0) for large government organizations (BHEL).
-- Freelanced in Microsoft, open-source (LAMP), and Java technologies; ran small businesses in training and home delivery.
+
+**GITI/GSPL (CDAC Centre) — Developer, Lead, PM, 2001 – 2005 (Varanasi, India)**
+- Developed web applications (.NET, ASP.NET, C#) and custom ERP software (VB 5.0/6.0) for large government organizations (BHEL).
+
+- Freelanced in Microsoft, open-source (LAMP), and Java technologies throughout this period; ran small businesses in training and home delivery.
+
+## Voluntary & Community Contributions (pre-2025)
+
+Distinct from the current [Multiple Companies community leadership role](#leadership-in-community-employment--entrepreneurship-initiatives--multiple-companies) — these were contributed alongside earlier employment, mostly during the HCL/NIIT era.
+
+- Teach India Initiative (Times of India); TNI of NIIT Education NGO, SocialCoder.org, The Nudge Foundation, and Gentleman Ride.
+- Taught and mentored at NGO "Khushi," sponsored by the Bill and Melinda Gates Foundation.
+- Guided students in schools sponsored by the Michael Dell Foundation, in connection with NIIT Technologies.
 
 ## How to apply
 
