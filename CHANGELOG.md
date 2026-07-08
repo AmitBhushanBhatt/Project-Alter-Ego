@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added docs/career/certifications.md (TOGAF, Power Platform Fundamentals, Operations Management, Competitive Strategy) and a Languages section to identity/profile.md (from the same LinkedIn export).
 - Ingested full 1997-2025 role history from a LinkedIn PDF export into roles.md (Competentia, Digitas India, Synoverge, MBD Group, Voith-Siemens, HCL, NIIT, Binary Semantics, Dish TV, and early assignments), refined Leasi/Cegal to month-level dates, added a concurrent multi-org consulting role, and linked eras.md's 1997-2018 eras to the newly-confirmed roles. Flagged the 2025+/current-role entry as pending reconciliation rather than merging it — LinkedIn shows a different, more recent picture (Cognosic, Stealth (WIP), ServiceBuddy) than the earlier resume-sourced entry.
 - Ingested confirmed resume facts into source domains: phone number (profile.md), roles.md (Leasi, Cegal, current startup — company/title/dates/responsibilities), tech-stack.md (cloud/integration, app dev, data), education.md; fixed eras.md's contradictory note about specifics belonging in generated artifacts; updated resume/linkedin format docs and generation prompts to read the new files.
 - Added LinkedIn generation process: format spec and reusable prompt (Tier 2 of BACKLOG.md); added docs/linkedin/ to the artifact-domain list in architecture.md.
