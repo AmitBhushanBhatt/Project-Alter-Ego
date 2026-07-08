@@ -7,12 +7,14 @@
 - .NET
 - PHP
 - JavaScript
+- See [roles.md](roles.md) for confirmed roles: Various Other Assignments (1997–2006), Dish TV (2006), and the start of Binary Semantics Ltd. (2006–2008, spans into the next era)
 
 ## 2008–2018 — Enterprise Platforms
 
 - SharePoint
 - AEM
 - Sitecore
+- See [roles.md](roles.md) for confirmed roles: Binary Semantics Ltd. (2006–2008), NIIT Technologies (2008–2010), HCL Technologies (2010–2012), Voith-Siemens Company (2012–2014), MBD Group (2014–2015), Synoverge Technologies (2015), and the start of Digitas India (2015–2019, spans into the next era)
 
 ## 2019–2025 — Cloud & Integration
 
@@ -20,7 +22,7 @@
 - Integration
 - Cloud
 - SaaS Architecture
-- See [roles.md](roles.md) for the confirmed roles within this era: CTO at Leasi (2023–2025), Integration Lead at Cegal (2022–2023)
+- See [roles.md](roles.md) for confirmed roles within this era: Digitas India (2015–2019), Competentia (2019–2022), Cegal + concurrent multi-org consulting (2022–2023), Leasi (2023–2025)
 
 ## 2025+ — Founder
 
@@ -28,7 +30,7 @@
 - Startup CTO
 - Current stage: Idea / MVP
 - Domains explored: Education, Services, Productivity
-- See [roles.md](roles.md#co-founder--cto--ai-saas-startup-unnamed--pre-launch) for the detailed role
+- See [roles.md](roles.md#co-founder--cto--ai-saas-startup-unnamed--pre-launch) for the detailed role — **pending reconciliation** against newer LinkedIn data (Cognosic, Stealth (WIP), ServiceBuddy); see roles.md's note
 - Current focus (2026–2030): LLM-powered experiences, RAG, agentic workflows, voice interfaces, knowledge graphs, AI-assisted engineering, cloud-native platforms
 
 ## How to apply

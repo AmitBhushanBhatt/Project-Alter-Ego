@@ -15,4 +15,4 @@ Same as the resume: no fact here is a source of truth, no exaggeration beyond [a
 
 ## Known gap
 
-Same as the resume — roles before 2022 have no confirmed company names yet; use era-level framing from [eras.md](../career/eras.md) for that period instead of inventing employers.
+Same as the resume — only the current era (2025+) is unresolved pending reconciliation; see `roles.md`'s note.

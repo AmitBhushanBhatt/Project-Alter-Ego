@@ -7,8 +7,8 @@
 3. **Summary** — 2-4 sentences threading the career eras through the [build-learn-share-repeat](../philosophy/build-learn-share-repeat.md) loop; not a generic objective statement.
 4. **Core Competencies** — 2-3 themed groupings (e.g. AI & Product Innovation, Architecture & Platforms, Leadership & Strategy) composed from [tech-stack.md](../career/tech-stack.md), [ai-experience.md](../career/ai-experience.md), and [leadership.md](../career/leadership.md) — not a separately maintained list.
 5. **Technology Stack** — from [tech-stack.md](../career/tech-stack.md) (non-AI) plus [ai-experience.md](../career/ai-experience.md) (AI-specific).
-6. **Professional Experience** — one entry per confirmed role from [roles.md](../career/roles.md), most recent first, with its bullets verbatim in spirit. Roles without confirmed company/title/dates stay out of this section — see `roles.md`'s note on 1997–2018.
-7. **Career Evolution** — the four-era overview from [eras.md](../career/eras.md), for periods not covered by named roles in `roles.md`.
+6. **Professional Experience** — one entry per confirmed role from [roles.md](../career/roles.md), most recent first, with its bullets verbatim in spirit. A full resume would list every entry in `roles.md` (1997–2025 is fully populated); a condensed resume should keep at minimum the current/pending entry plus the most recent 3-5 roles and fold the rest into Career Evolution.
+7. **Career Evolution** — the four-era overview from [eras.md](../career/eras.md), useful as a condensed summary alongside or instead of the full `roles.md` list.
 8. **Leadership Highlights** — from [leadership.md](../career/leadership.md). Quantified only where the source doc already states a number; never round up or estimate.
 9. **Education** — from [education.md](../career/education.md), listed as-is; no inferred institution or year.
 10. **Current Focus** — the forward-looking line from [eras.md](../career/eras.md)'s 2025+ era, plus the motto from [build-learn-share-repeat.md](../philosophy/build-learn-share-repeat.md).
@@ -21,4 +21,4 @@
 
 ## Known gap
 
-Roles before 2022 (1997–2018 eras) have no confirmed company names yet — `Career Evolution` (era-level) is as specific as those periods can get until specifics are supplied. Don't invent employer names to fill out a full reverse-chronological Experience section.
+Only the current era (2025+) is unresolved: `roles.md`'s "Co-Founder & CTO — AI SaaS Startup" entry is pending reconciliation against newer data. Don't generate a resume's most-recent-role entry from that section until it's resolved — everything from 1997 through the Leasi/Cegal era (2025 and earlier) is confirmed and safe to use.
