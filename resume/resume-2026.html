@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amit Bhushan Bhatt — Resume</title>
+<style>
+  :root {
+    --paper: #FBFAF7;
+    --surface: #FFFFFF;
+    --ink: #1C1E21;
+    --ink-soft: #55585E;
+    --accent: #2B4C6F;
+    --rule: #D8D5CC;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17181A;
+    --surface: #1F2123;
+    --ink: #ECEAE3;
+    --ink-soft: #B7B4AA;
+    --accent: #8FB3D9;
+    --rule: #34363A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17181A;
+      --surface: #1F2123;
+      --ink: #ECEAE3;
+      --ink-soft: #B7B4AA;
+      --accent: #8FB3D9;
+      --rule: #34363A;
+    }
+  }
+  @media print {
+    :root {
+      --paper: #FFFFFF;
+      --surface: #FFFFFF;
+      --ink: #1C1E21;
+      --ink-soft: #4A4D52;
+      --accent: #2B4C6F;
+      --rule: #D8D5CC;
+    }
+    body { margin: 0; }
+    a { color: var(--ink) !important; text-decoration: none !important; }
+    .entry { break-inside: avoid; }
+    section { break-inside: avoid-page; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 56px 64px;
+  }
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .headline {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-style: italic;
+    font-size: 15.5px;
+    color: var(--accent);
+    margin: 2px 0 4px;
+  }
+  .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+  .contact-line a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px dotted var(--rule); }
+  .contact-line .sep { color: var(--rule); }
+  .languages-line { font-size: 12px; color: var(--ink-soft); }
+
+  section { margin: 26px 0; }
+  h2 {
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p.summary { margin: 0; color: var(--ink); }
+
+  .comp-grid, .stack-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .comp-item, .stack-item { margin: 0; }
+  .comp-item .label, .stack-item .label {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .stack-item .learning {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .entry { margin-bottom: 18px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .entry-title {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .entry-when {
+    font-family: ui-monospace, "SF Mono", "Menlo", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .entry-where {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 1px 0 6px;
+  }
+  .entry-body { margin: 0; color: var(--ink); }
+
+  ul.plain {
+    margin: 0;
+    padding-left: 18px;
+  }
+  ul.plain li { margin-bottom: 5px; }
+  ul.plain li:last-child { margin-bottom: 0; }
+
+  .affiliations, .cert-continuous { color: var(--ink); }
+  .cert-continuous { font-style: italic; color: var(--ink-soft); margin-top: 8px; }
+
+  .focus-block {
+    padding-top: 4px;
+  }
+  .motto {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 16px;
+    color: var(--accent);
+    margin-top: 10px;
+  }
+
+  footer.gen-note {
+    margin-top: 36px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 10.5px;
+    color: var(--ink-soft);
+  }
+  @media print { footer.gen-note { display: none; } }
+
+  @media (max-width: 640px) {
+    .page { padding: 32px 20px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <h1>Amit Bhushan Bhatt</h1>
+    <div class="headline">Founder CTO | AI-First SaaS Architect | Startup CTO</div>
+    <div class="contact-line">
+      <span>Oslo, Norway</span><span class="sep">·</span>
+      <a href="mailto:amitbhushanbhatt@hotmail.com">amitbhushanbhatt@hotmail.com</a><span class="sep">·</span>
+      <span>+47 92986330</span><span class="sep">·</span>
+      <span>+91 9818795162</span>
+    </div>
+    <div class="contact-line">
+      <a href="https://linkedin.com/in/amitbhushanbhatt">linkedin.com/in/amitbhushanbhatt</a><span class="sep">·</span>
+      <a href="https://github.com/AmitBhushanBhatt">github.com/AmitBhushanBhatt</a><span class="sep">·</span>
+      <a href="https://amitbhushanbhatt.com">amitbhushanbhatt.com</a>
+    </div>
+    <div class="languages-line">Languages: English, Hindi, Gujarati, Bhojpuri (native/professional) · German, Norwegian Bokmål (elementary)</div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Systems builder with 27+ years of software engineering, architecture, and technology leadership experience, spanning web engineering, enterprise digital platforms, cloud/integration architecture, and — since 2025 — AI-first SaaS founding. Currently leads product and technology as CPTO at ServiceBuddy and manages venture and equity interests as Founder, CEO &amp; MD of Stealth (WIP), following a CTO role at Cognosic building an AI-assisted SaaS platform for higher education. Combines hands-on architecture with executive leadership — having led engineering organizations of 50+ people and multi-million-dollar technology initiatives — on one repeating loop: build, learn, share, repeat.</p>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="comp-grid">
+      <p class="comp-item"><span class="label">AI &amp; Product Innovation —</span> AI-first product development, Azure OpenAI, Azure AI Search, RAG, voice assistants, prompt engineering and evaluation, MCP clients, external tool integration, n8n orchestration, Neo4j knowledge graphs, AI-assisted engineering.</p>
+      <p class="comp-item"><span class="label">Architecture &amp; Platforms —</span> Multi-tenant SaaS architecture, API-first design, cloud-native systems, Azure integration services (Functions, Event Grid, Service Bus, API Management, Logic Apps), platform modernization, full-stack development (MERN, .NET).</p>
+      <p class="comp-item"><span class="label">Leadership &amp; Strategy —</span> Founder CTO leadership, startup product development, technology vision and roadmaps, engineering leadership of 50+ person organizations, stakeholder management, business-outcome-oriented delivery.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technology Stack</h2>
+    <div class="stack-grid">
+      <p class="stack-item"><span class="label">AI &amp; Intelligent Systems —</span> Azure OpenAI, Azure AI Search, RAG, Prompt Engineering, Prompt Evaluation, MCP Clients, Voice Assistants, Neo4j, n8n. <span class="learning">Currently learning: LangSmith, Terraform, the wider OpenAI ecosystem.</span></p>
+      <p class="stack-item"><span class="label">Cloud &amp; Integration —</span> Microsoft Azure, Azure Functions, Event Grid, Service Bus, API Management, Logic Apps, Azure Integration Services, Terraform, Docker, GitHub Actions, CI/CD.</p>
+      <p class="stack-item"><span class="label">Application Development —</span> Node.js, TypeScript, JavaScript, React, React Native, Flutter, Express, GraphQL, REST APIs.</p>
+      <p class="stack-item"><span class="label">Data —</span> MongoDB, PostgreSQL, Neo4j.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Founder, CEO &amp; Managing Director — Stealth (WIP)</span>
+        <span class="entry-when">Jan 2026 – Present</span>
+      </div>
+      <div class="entry-where">Oslo, Norway · concurrent with ServiceBuddy below</div>
+      <p class="entry-body">Privately held holding and venture entity managing long-term equity/ESOP interests, incubating early-stage product and platform initiatives, and executing selective high-impact technology and architecture engagements — emphasizing long-term value creation over short-term consulting. Building offshore tech capabilities with a set of offshore partners.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">CPTO (Chief Product and Technology Officer) — ServiceBuddy</span>
+        <span class="entry-when">Jan 2026 – Present</span>
+      </div>
+      <div class="entry-where">Oslo, Norway · concurrent with Stealth (WIP) above</div>
+      <p class="entry-body">Leading Product and Technology end-to-end for a next-generation services marketplace launching in Norway and designed to scale globally. Built a scalable, cloud-native platform (Supabase, React, Node.js, Vercel), with mobile underway in React Native (Expo) within a Turborepo architecture. Embedding AI into the core experience through intelligent job-to-provider matching, moving from POC to market toward an AI-first platform.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Chief Technology Officer — Cognosic</span>
+        <span class="entry-when">Oct 2025 – Mar 2026</span>
+      </div>
+      <div class="entry-where">Bergen, Norway · 6 months</div>
+      <p class="entry-body">Led technology, product, and architecture strategy for an AI-assisted SaaS platform enabling universities to design, assess, and optimize curricula. Oversaw AI integration (OpenAI API), full-stack and mobile development (Flutter/Dart, Apollo GraphQL), and cloud/data infrastructure (GCP, Neo4j). Combined hands-on engineering with strategic leadership in a lean startup environment.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Chief Technology Officer — Leasi</span>
+        <span class="entry-when">Oct 2023 – Sep 2025</span>
+      </div>
+      <div class="entry-where">Norway</div>
+      <p class="entry-body">Owned technology direction and architecture across frontend, backend, integrations, and cloud infrastructure for a multi-tenant SaaS platform (inventory, equipment rental, maintenance, and project/resource management). Led SaaS platform development using MERN and Microsoft Azure (+iPaaS); planned and executed migration from AppFarm.io to a MERN + Azure iPaaS stack. Applied AI (LLMs, agent workflows, MCP) to software engineering itself via GitHub Copilot/Codespaces, DataButton, and Cursor.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Integration Lead — Cegal <span style="font-weight:400;font-style:italic;">(with concurrent multi-org technology consulting)</span></span>
+        <span class="entry-when">May 2022 – Sep 2023</span>
+      </div>
+      <div class="entry-where">Stavanger, Norway</div>
+      <p class="entry-body">Led enterprise integration modernization, migrating Cegal from BizTalk 2016 to Azure iPaaS — documenting the "as is"/"to be" architecture, implementing DevOps (Azure DevOps + GitLab), and integrating 10+ enterprise applications (Salesforce, ServiceNow, Unit4, Visma Business) via REST/SOAP/SQL/CSV. Concurrently consulted for multiple organizations on digital transformation, including a CRM+ATS and billing/finance integration for a UK-based global organization and an IoT baggage-security product.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Competentia — Global Digital Manager, then Global Digital Lead</span>
+        <span class="entry-when">Jul 2019 – Jan 2022</span>
+      </div>
+      <div class="entry-where">Stavanger, Norway (+ USA, Australia, MEA) · 2 years 7 months</div>
+      <p class="entry-body">Owned Competentia's global digital strategy across two roles: building Lean-Agile practices (SAFe) and PMI-aligned portfolio management as Global Digital Manager, then owning IT solutions, vendor management, and a digital platform build (Azure iPaaS, ELK, MongoDB, SharePoint/Teams/Office 365) as Global Digital Lead. Delivered a digital product for job search, referral, and employee self-service. Managed the IT handover through the Competentia/AirSwift merger.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Community &amp; Voluntary Leadership</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Multiple Companies</span>
+        <span class="entry-when">Oct 2025 – Present</span>
+      </div>
+      <div class="entry-where">Oslo, Norway · unpaid</div>
+      <p class="entry-body">Leadership across social, cultural, and entrepreneurship-focused organizations: Røde Kors Norge (Norwegian Red Cross), Sammen om en Jobb (job-seeker mentoring), Pådriv (sustainable business ecosystems), and Indian for Growth (entrepreneurship within the Indian community in Norway).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Career Evolution</h2>
+    <ul class="plain">
+      <li><span class="entry-title">AI-Native SaaS &amp; Founder CTO, 2025 – Present</span> — AI-first products, startup CTO/CPTO leadership, RAG, conversational AI, voice interfaces, workflow orchestration, knowledge graphs, AI-assisted engineering.</li>
+      <li><span class="entry-title">Modern SaaS, Cloud &amp; Integration, 2019 – 2025</span> — Cloud-native SaaS, Azure architecture, API-first platforms, enterprise integration, platform modernization. Roles: Competentia, Cegal, Leasi (detailed above), and Digitas India (Delivery Manager / AVP Digital, 2015–2019 — presales, solution architecture, and digital product management across Nordic, FMCG, and automotive clients including Nissan and Senoko Energy).</li>
+      <li><span class="entry-title">Enterprise Digital Platforms, 2008 – 2018</span> — SharePoint, Adobe Experience Manager, Sitecore, enterprise web platforms. Roles: Synoverge Technologies (Senior Project Manager, 2015), MBD Group (GM IT, 2014–2015), Voith-Siemens (Business Solutions Manager, 2012–2014 — grew an offshore development center from 15 to 25 people and its managed revenue from €250K to €350K/year), HCL Technologies (Project Manager, 2010–2012 — built a team from 0 to 50 for a staff-augmentation program; accountable for projects sized at USD 3–4 million), NIIT Technologies (Project Lead, 2008–2010).</li>
+      <li><span class="entry-title">Web Engineering Foundations, 1997 – 2007</span> — .NET, PHP, JavaScript, early internet platforms. Roles: Binary Semantics (Senior Systems Analyst, 2006–2008), Dish TV (Technical Lead, 2006), GITI/GSPL CDAC Centre (Developer/Lead/PM, 2001–2005), and early training/development work at ICS, Aptech, and Arena (1997–2000).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Leadership Highlights</h2>
+    <ul class="plain">
+      <li>27+ years of software engineering, architecture, and technology leadership experience.</li>
+      <li>Led engineering organizations of 50+ professionals.</li>
+      <li>Participated in multi-million-dollar technology initiatives.</li>
+      <li>Hands-on technical leader — architecture-focused, business-outcome-oriented.</li>
+      <li>Experienced across four technology eras: web, enterprise platforms, cloud SaaS, and AI-native products.</li>
+      <li>Active founder building AI-first SaaS products and managing venture/equity interests from idea through MVP.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="plain">
+      <li><span class="entry-title">IGNOU</span> — BA (Psychology) — enrolled 2018, <em>in progress</em></li>
+      <li><span class="entry-title">Indian Institute of Management, Lucknow</span> — Executive Education (EMP), Sales and Marketing (2014 – 2015)</li>
+      <li><span class="entry-title">ICFAI</span> — PG Advance Diploma in Business Finance (2011 – 2013)</li>
+      <li><span class="entry-title">Sikkim Manipal University</span> — MSc (IT), Information Technology (2007 – 2009)</li>
+      <li><span class="entry-title">CDAC</span> — PGDCA, Computer Science (2001)</li>
+      <li><span class="entry-title">V.B.S Purvanchal University</span> — B.Sc., Mathematics and Physics (1994 – 1997)</li>
+      <li><span class="entry-title">Aptech</span> — Advance Diploma in Software Engineering (1997)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <p class="summary"><span class="entry-title">Microsoft —</span> Azure Fundamentals (AZ-900), Azure Data Fundamentals (DP-900), Azure AI Fundamentals (AI-900), Power Platform Fundamentals (PL-900), DevOps with GitHub, Modernize .NET Apps, Azure Synapse Analytics (all 2021).</p>
+    <p class="summary" style="margin-top:8px;"><span class="entry-title">Professional —</span> TOGAF (2015), SAFe (2020), PMI-ACP (2016), COBIT (2016), CSM (2015, Scrum Alliance), ITIL V3 (2012).</p>
+    <p class="cert-continuous">Continuous learning: MOOCs from Wharton, Johns Hopkins, University of Michigan, University of Pennsylvania, and UC San Diego (2013–2019) in operations management, competitive strategy, finance, marketing, and data science; ongoing technical trainings across Azure, AWS, and full-stack development.</p>
+  </section>
+
+  <section>
+    <h2>Professional Affiliations</h2>
+    <p class="affiliations">Institute of Engineers (India) · Computer Society of India · ACM (India) · IEEE Computer Society · Project Management Institute · Scrum Alliance · IIBA · Linux Foundation, Open Source Initiative, Apache Foundation, Free Software Foundation, Mozilla Foundation.</p>
+  </section>
+
+  <section class="focus-block">
+    <h2>Current Focus (2026–2030)</h2>
+    <p class="summary">Building AI-first SaaS products and intelligent systems that combine LLM-powered experiences, RAG, agentic workflows, voice interfaces, knowledge graphs, AI-assisted engineering, and cloud-native platforms.</p>
+    <p class="motto">Build. Learn. Share. Repeat.</p>
+  </section>
+
+  <footer class="gen-note">Generated from Alter Ego OS · docs/resume/format.md · resume/resume-2026.md is the canonical Markdown source</footer>
+
+</div>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added styled HTML and print-ready PDF renders of the resume (resume/resume-2026.html, resume/resume-2026.pdf), generated from resume-2026.md for viewing and LinkedIn/sharing use. Ink-and-slate-blue palette, Georgia display face, tabular-mono date columns; print styles force the light palette regardless of screen theme. resume-2026.md remains the canonical source — regenerate the HTML/PDF from it, don't hand-edit them.
 - Added docs/philosophy/decision-framework.md: the practical "does this strengthen or dilute the identity?" filter (six questions grounded in existing docs), a Core Values section (first formal capture of the 7 values from the expanded Project Alter Ego vision), and three worked examples. The standout new deliverable from the expanded 7-phase vision — a durable decision lens rather than another artifact.
 - Genericized the generation prompts per ADR-0002: prompts/resume-generation.md and prompts/linkedin-generation.md now reference "the person named in docs/identity/profile.md" instead of hardcoding "Amit Bhushan Bhatt".
 - Added ADR-0002: personal instance first, template-extractable later. Formalizes a design constraint from the expanded Project Alter Ego vision — keep the repository's "engine" (docs/knowledge/, prompts/, doc standards) free of hardcoded personal specifics, separate from the "content" (identity/philosophy/career), so the methodology stays fork-ready even though extraction isn't a current commitment.
