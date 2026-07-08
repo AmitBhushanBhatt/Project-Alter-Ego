@@ -10,14 +10,23 @@ Unblocks reuse of everything else; the repo is v1.0, the website is the next gen
 - [ ] `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages
 - [ ] Scaffold the `website/` implementation
 
-## Tier 2 — Resume & LinkedIn generation (in progress)
+## Tier 2 — Resume & LinkedIn generation (resume shipped, LinkedIn pending)
 
 Repeatable generation processes, not one-off hand-written docs, so they can't drift from the source domains.
 
-- [ ] Resume generation process (`docs/resume/format.md` + `prompts/resume-generation.md`)
-- [ ] LinkedIn generation process (`docs/linkedin/format.md` + `prompts/linkedin-generation.md`)
+- [x] Resume generation process (`docs/resume/format.md` + `prompts/resume-generation.md`) — first draft generated: `resume/resume-2026.md` + styled `resume/resume-2026.html` / `resume/resume-2026.pdf`
+- [ ] LinkedIn generation process (`docs/linkedin/format.md` + `prompts/linkedin-generation.md`) — process exists, not yet run
+- [ ] Condensed 2-page resume variant (per `docs/resume/format.md`'s condensed-resume guidance) for casual sharing, alongside the full 6-page version
 
-Note: producing a full, non-generic instance of either artifact needs company names, dates, and quantified achievements that [leadership.md](docs/career/leadership.md) and [eras.md](docs/career/eras.md) don't yet contain — those docs deliberately excluded specifics until supplied.
+## Related, parallel initiative — The Vault (private data layer)
+
+Not part of the tiered artifact roadmap above — a separate private system, not a generated artifact. See [ADR-0003](adr/ADR-0003-vault-architecture.md) and [vault/ARCHITECTURE.md](vault/ARCHITECTURE.md).
+
+- [x] Architecture designed and recorded (source taxonomy, pipeline stages, tech stack)
+- [ ] Physical deployment decision (this Mac vs. NAS/dedicated server)
+- [ ] Pilot ingestion on a first source category
+- [ ] MCP server implementation
+- [ ] Project Alter Ego ↔ Vault query integration
 
 ## Tier 3 — Content / thought leadership
 

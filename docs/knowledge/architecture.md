@@ -11,6 +11,7 @@
 - `scripts/` / `tools/` — automation that reads this repo to produce artifacts.
 - `resume/` — the generated resume output (regenerated from `docs/resume/` + source domains, never hand-edited directly).
 - `website/` — the generated website output (or its build source, once it exists).
+- `vault/` — **design/architecture docs only, never data.** The Vault itself (banking, insurance, chats, email, and other private material) is a separate, private, local-first project that never enters this or any repository — see [ADR-0003](../../adr/ADR-0003-vault-architecture.md).
 
 ## Two kinds of `docs/` folders
 
