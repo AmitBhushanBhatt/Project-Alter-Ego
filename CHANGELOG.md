@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added docs/narrative/ as a new source domain (how the career story gets told, distinct from career's raw facts and philosophy's reasoning) and the first piece: origin-story.md, grounded entirely in eras.md/roles.md/philosophy docs. Updated architecture.md's source-domain list to describe this domain's deliberately interpretive nature. Holding off on the remaining narrative pieces (founder story, why-essays, bios, case studies) pending a voice/tone check.
+
 - Added ADR-0004: website tech stack is Astro + Vercel, sourcing content from docs/ at build time rather than duplicating it. Unblocks Tier 1 of BACKLOG.md. Added a new "Narrative content (Phase 3)" section to BACKLOG.md (origin story, founder story, why-I-build essays, bios, case studies) as a new docs/narrative/ source domain, sequenced before the fuller website build per user's chosen order (tech decision → content → site).
 
 - Added CLAUDE.md and .claude/settings.json: consolidates this session's conventions (git identity/SSH remote, doc standards, engine/content split, privacy rule, autonomous-work guardrails, common task recipes) into a persistent project guide, so future sessions don't need to re-derive them from conversation history. Settings.json adds a permissions allowlist for routine git/read operations and a sensitive-data pre-commit scan, to reduce friction for autonomous/loop-based work. Tightened BACKLOG.md with a loop-readiness legend (🤖 autonomous-safe vs. ✋ needs a decision first) and flagged Tier 3/4 as not yet decomposed enough for autonomous pickup.

@@ -15,11 +15,12 @@
 
 ## Two kinds of `docs/` folders
 
-**Source domains** — canonical, factual, hand-maintained. Nothing here is derived from anything else in the repo:
+**Source domains** — canonical, hand-maintained, reused across multiple artifacts rather than belonging to just one:
 
 - `docs/identity/` — who Amit is (stable facts + positioning)
 - `docs/philosophy/` — why Amit builds the way he does
-- `docs/career/` — what happened (eras, leadership, AI experience)
+- `docs/career/` — what happened (eras, leadership, AI experience) — raw fact, nothing derived
+- `docs/narrative/` — how the story of `docs/career/` gets told — deliberately interpretive/synthesized, unlike the other source domains. Still canonical in the sense that the website, talks, and media requests should all draw from the same narrative rather than each writing their own; if a narrative claim needs to change, it changes here once.
 - `docs/knowledge/` — how this repository itself works (this folder)
 
 **Artifact domains** — describe how to *generate* an output from the source domains, or hold generation-specific strategy. They should contain strategy/framing, not restated facts:
