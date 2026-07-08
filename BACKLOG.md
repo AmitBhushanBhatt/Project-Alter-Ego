@@ -2,35 +2,37 @@
 
 Tiered roadmap for what's left, derived from the ChatGPT handover's Long-Term Deliverables. `CHANGELOG.md` records what's already shipped; this file tracks what's still ahead and in what order.
 
+**Loop readiness legend:** 🤖 = concrete enough for autonomous pickup (per `CLAUDE.md`'s "working autonomously" rules). ✋ = needs a human decision first (tech choice, new ADR, or a genuine conflict) — a loop should stop and ask here, not guess.
+
 ## Tier 1 — Website
 
 Unblocks reuse of everything else; the repo is v1.0, the website is the next generated artifact (see [ADR-0001](adr/ADR-0001-knowledge-repository-first.md)).
 
-- [ ] ADR for website tech stack / hosting
-- [ ] `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages
-- [ ] Scaffold the `website/` implementation
+- [ ] ✋ ADR for website tech stack / hosting — a real decision, not routine content; blocks the two items below
+- [ ] 🤖 `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages (doesn't need the tech-stack ADR first, only the theme framing already in strategy)
+- [ ] ✋ Scaffold the `website/` implementation — depends on the tech-stack ADR above being resolved
 
 ## Tier 2 — Resume & LinkedIn generation (resume shipped, LinkedIn pending)
 
 Repeatable generation processes, not one-off hand-written docs, so they can't drift from the source domains.
 
 - [x] Resume generation process (`docs/resume/format.md` + `prompts/resume-generation.md`) — first draft generated: `resume/resume-2026.md` + styled `resume/resume-2026.html` / `resume/resume-2026.pdf`
-- [ ] LinkedIn generation process (`docs/linkedin/format.md` + `prompts/linkedin-generation.md`) — process exists, not yet run
-- [ ] Condensed 2-page resume variant (per `docs/resume/format.md`'s condensed-resume guidance) for casual sharing, alongside the full 6-page version
+- [ ] 🤖 LinkedIn generation process (`docs/linkedin/format.md` + `prompts/linkedin-generation.md`) — process exists, not yet run; same pattern as the resume, straightforward to execute
+- [ ] 🤖 Condensed 2-page resume variant (per `docs/resume/format.md`'s condensed-resume guidance) for casual sharing, alongside the full 6-page version
 
 ## Related, parallel initiative — The Vault (private data layer)
 
-Not part of the tiered artifact roadmap above — a separate private system, not a generated artifact. See [ADR-0003](adr/ADR-0003-vault-architecture.md) and [vault/ARCHITECTURE.md](vault/ARCHITECTURE.md).
+Not part of the tiered artifact roadmap above — a separate private system, not a generated artifact, and **not something a loop running in this repo builds**. See [ADR-0003](adr/ADR-0003-vault-architecture.md) and [vault/ARCHITECTURE.md](vault/ARCHITECTURE.md).
 
 - [x] Architecture designed and recorded (source taxonomy, pipeline stages, tech stack)
-- [ ] Physical deployment decision (this Mac vs. NAS/dedicated server)
-- [ ] Pilot ingestion on a first source category
-- [ ] MCP server implementation
-- [ ] Project Alter Ego ↔ Vault query integration
+- [ ] ✋ Physical deployment decision (this Mac vs. NAS/dedicated server)
+- [ ] ✋ Pilot source category and the actual Vault project location — both still open
+- [ ] MCP server implementation — happens in the separate Vault project once it exists, not in `alter-ego`
+- [ ] Project Alter Ego ↔ Vault query integration — once both sides exist
 
 ## Tier 3 — Content / thought leadership
 
-Ongoing rather than one-time; governed by [content-strategy.md](docs/strategy/content-strategy.md)'s "prove it was built" filter.
+Ongoing rather than one-time; governed by [content-strategy.md](docs/strategy/content-strategy.md)'s "prove it was built" filter. **Not loop-ready yet** — each item below is a placeholder, not a concrete task; needs decomposition (e.g. "Newsletter" → platform choice, cadence, first-issue topic) before autonomous work can pick it up.
 
 - [ ] Newsletter
 - [ ] Builder's Journal
@@ -39,6 +41,8 @@ Ongoing rather than one-time; governed by [content-strategy.md](docs/strategy/co
 - [ ] Talks
 
 ## Tier 4 — Larger, longer horizon
+
+**Not loop-ready** — same reason as Tier 3, and further out besides.
 
 - [ ] AI Lab (constrained by the honesty rules in [ai-experience.md](docs/career/ai-experience.md))
 - [ ] Consulting assets

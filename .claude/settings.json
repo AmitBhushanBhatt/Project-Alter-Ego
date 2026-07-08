@@ -1,0 +1,66 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(tree:*)",
+      "Bash(file:*)",
+      "Bash(which:*)",
+      "Bash(pwd:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(diff:*)",
+      "Bash(sed -n:*)",
+      "Bash(mkdir:*)",
+      "Bash(chmod +x:*)",
+      "Bash(python3:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git remote:*)",
+      "Bash(git fetch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -q 'git commit'; then git -C /Users/amitbhatt/development/alter-ego diff --cached 2>/dev/null | grep -iE '(passport|date of birth|dob|nationality|visa|secret|password|_key|_token)\\s*[=:]\\s*[\"'\\''`]?[^\"'\\''`]{4,}' && echo '⚠️  POSSIBLE SENSITIVE DATA IN STAGED FILES — review before committing (this repo is public)' || true; fi"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/amitbhatt/development/alter-ego && git diff --stat HEAD 2>/dev/null | head -15"
+          }
+        ]
+      }
+    ]
+  }
+}
