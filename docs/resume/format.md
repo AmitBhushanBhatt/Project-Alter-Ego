@@ -10,15 +10,17 @@
 6. **Professional Experience** — one entry per confirmed role from [roles.md](../career/roles.md), most recent first, with its bullets verbatim in spirit. A full resume would list every entry in `roles.md` (1997–2025 is fully populated); a condensed resume should keep at minimum the current/pending entry plus the most recent 3-5 roles and fold the rest into Career Evolution.
 7. **Career Evolution** — the four-era overview from [eras.md](../career/eras.md), useful as a condensed summary alongside or instead of the full `roles.md` list.
 8. **Leadership Highlights** — from [leadership.md](../career/leadership.md). Quantified only where the source doc already states a number; never round up or estimate.
-9. **Education** — from [education.md](../career/education.md), listed as-is; no inferred institution or year.
-10. **Current Focus** — the forward-looking line from [eras.md](../career/eras.md)'s 2025+ era, plus the motto from [build-learn-share-repeat.md](../philosophy/build-learn-share-repeat.md).
+9. **Education** — from [education.md](../career/education.md), reverse-chronological, listed as-is; no inferred institution or year.
+10. **Certifications** — from [certifications.md](../career/certifications.md), listed as-is.
+11. **Current Focus** — the forward-looking line from [eras.md](../career/eras.md)'s 2025+ era, plus the motto from [build-learn-share-repeat.md](../philosophy/build-learn-share-repeat.md).
 
 ## Hard constraints
 
 - No content in this document is a source of truth — every fact must trace to a linked doc above. If a generated resume says something these docs don't support, the source doc is wrong (fix it first) or the resume is wrong (cut it).
 - Do not optimize toward Principal/Staff/Distinguished Engineer or VP Engineering — see [positioning.md](../identity/positioning.md#positioning-guardrails).
 - Do not inflate AI expertise beyond [ai-experience.md](../career/ai-experience.md).
+- Amit currently holds two concurrent roles (Stealth (WIP) and ServiceBuddy) — a resume's Professional Experience section should present both rather than picking one as "the" current role.
 
-## Known gap
+## Status
 
-Only the current era (2025+) is unresolved: `roles.md`'s "Co-Founder & CTO — AI SaaS Startup" entry is pending reconciliation against newer data. Don't generate a resume's most-recent-role entry from that section until it's resolved — everything from 1997 through the Leasi/Cegal era (2025 and earlier) is confirmed and safe to use.
+Fully populated as of 2026-07 — `roles.md` covers 1997–present with no open gaps. A generation run today would not need any placeholders.

@@ -28,9 +28,8 @@
 
 - AI SaaS
 - Startup CTO
-- Current stage: Idea / MVP
-- Domains explored: Education, Services, Productivity
-- See [roles.md](roles.md#co-founder--cto--ai-saas-startup-unnamed--pre-launch) for the detailed role — **pending reconciliation** against newer LinkedIn data (Cognosic, Stealth (WIP), ServiceBuddy); see roles.md's note
+- Domains explored: Education (Cognosic), Services (ServiceBuddy), venture-building (Stealth (WIP))
+- See [roles.md](roles.md) for confirmed roles within this era: Cognosic CTO (Oct 2025–Mar 2026), then two concurrent current roles from Jan 2026 — Founder/CEO/MD at Stealth (WIP) and CPTO at ServiceBuddy — alongside unpaid community leadership roles (Multiple Companies, Oct 2025–Present)
 - Current focus (2026–2030): LLM-powered experiences, RAG, agentic workflows, voice interfaces, knowledge graphs, AI-assisted engineering, cloud-native platforms
 
 ## How to apply

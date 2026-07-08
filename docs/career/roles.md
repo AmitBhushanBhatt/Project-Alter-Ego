@@ -2,22 +2,53 @@
 
 Detailed job history — company, title, dates, responsibilities — for the roles specific facts exist for. This is the canonical source; [resume/format.md](../resume/format.md) and [linkedin/format.md](../linkedin/format.md) generate their Experience sections from this document, not the other way around.
 
-> **Pending reconciliation:** the entry below for 2025–Present ("Co-Founder & CTO — AI SaaS Startup") came from an earlier resume draft. A subsequent LinkedIn export shows a different and more detailed current picture (Cognosic as a completed CTO role, then Stealth (WIP) and ServiceBuddy as concurrent current roles from January 2026). These aren't merged in yet — see the open question in conversation before trusting this section for anything current.
+## Founder, CEO & Managing Director — Stealth (WIP)
 
-## Co-Founder & CTO — AI SaaS Startup (unnamed / pre-launch)
+**January 2026 – Present (Oslo, Norway)** — concurrent with the ServiceBuddy role below
 
-**2025 – Present** — *unreconciled, see note above*
+A privately held holding and venture entity managing long-term equity interests, early-stage product initiatives, and selective technology-led projects.
 
-Building AI-first SaaS products across education, services, and productivity domains, from idea stage through MVP development.
+- Holds and manages equity/ESOP positions in technology companies.
+- Incubates and operates early-stage product and platform initiatives.
+- Makes selective investments and strategic partnerships.
+- Executes limited, high-impact technology and architecture engagements across software, SaaS platforms, AI-enabled systems, and digital-first businesses — emphasizing long-term value creation over short-term consulting.
+- Building offshore tech capabilities with a set of offshore partners.
 
-- Define product strategy, technology vision, and platform architecture for AI-native SaaS ventures.
-- Design multi-tenant SaaS architecture using Azure cloud services, modern web technologies, and API-first principles.
-- Build LLM-powered conversational and voice-enabled product experiences.
-- Prototype RAG-based document and knowledge retrieval using Azure AI Search.
-- Explore AI workflow orchestration using n8n, external tool integrations, and MCP-compatible client ecosystems.
-- Apply AI-assisted engineering practices to accelerate experimentation, prototyping, and product delivery.
-- Use Neo4j knowledge graph concepts to explore structured knowledge and relationship-driven product experiences.
-- Lead product discovery, technical decision-making, MVP planning, and iterative product evolution.
+## CPTO (Chief Product and Technology Officer) — ServiceBuddy
+
+**January 2026 – Present (Oslo, Norway)** — concurrent with the Stealth (WIP) role above
+
+Building a next-generation services marketplace, starting with Norway and designed to scale globally.
+
+- Leads Product and Technology end-to-end, from vision to execution.
+- Built a scalable, cloud-native platform using Supabase, React, Node.js, and Vercel; mobile underway in React Native (Expo) within a Turborepo architecture.
+- Accelerated prototyping via Buzz44; workflows streamlined through GitHub and Google Workspace.
+- Embedding AI into the core experience through intelligent job-to-provider matching, moving from POC to market with a roadmap toward an AI-first platform (automation, personalization, data-driven decisioning).
+- Tech: Supabase (PostgreSQL, Auth0), React, Node.js (Express), React Native (Expo), Turborepo, Payload CMS, Vercel, GitHub (CI/CD), Google Workspace.
+
+## Leadership in Community, Employment & Entrepreneurship Initiatives — Multiple Companies
+
+**October 2025 – Present (Oslo, Norway)**
+
+Leadership and strategic support across multiple social, cultural, and business-focused organizations, emphasizing inclusion, opportunity creation, and entrepreneurship.
+
+- Røde Kors Norge (Norwegian Red Cross) — leadership initiatives strengthening families and building resilient communities.
+- Sammen om en Jobb — leading and mentoring job seekers toward structured employment pathways.
+- Pådriv — driving sustainable business opportunities and collaboration between entrepreneurs, companies, and ecosystems.
+- Indian for Growth — leadership role promoting entrepreneurship and cross-community collaboration within the Indian community in Norway.
+- Broader community engagement across cultural and community organizations.
+
+## Chief Technology Officer — Cognosic
+
+**October 2025 – March 2026 (6 months, Bergen, Norway)**
+
+Led technology, product, and architecture strategy for an AI-assisted SaaS platform enabling universities to design, assess, and optimize curricula through intelligent insights (OpenAI-powered tools, graph-based analytics, collaborative features).
+
+- AI integration: OpenAI API for productivity and curriculum insights.
+- Full-stack and mobile development: responsive, multi-tenant web and mobile apps using Flutter/Dart, Apollo GraphQL, and modern frontend frameworks.
+- Cloud and data infrastructure: GCP, Neo4j graph databases, cloud-native microservices.
+- Developer productivity: GitHub Copilot, CI/CD pipelines, agile practices.
+- Combined hands-on engineering with strategic leadership in a lean startup environment.
 
 ## Chief Technology Officer — Leasi
 

@@ -11,8 +11,8 @@ LinkedIn differs from the resume in tone (first person, narrative) and length (h
 
 ## Hard constraints
 
-Same as the resume: no fact here is a source of truth, no exaggeration beyond [ai-experience.md](../career/ai-experience.md), no optimizing toward the roles excluded in [positioning.md](../identity/positioning.md#positioning-guardrails).
+Same as the resume: no fact here is a source of truth, no exaggeration beyond [ai-experience.md](../career/ai-experience.md), no optimizing toward the roles excluded in [positioning.md](../identity/positioning.md#positioning-guardrails). Amit currently holds two concurrent roles (Stealth (WIP) and ServiceBuddy) — reflect both, not just one.
 
-## Known gap
+## Status
 
-Same as the resume — only the current era (2025+) is unresolved pending reconciliation; see `roles.md`'s note.
+Fully populated as of 2026-07 — same as the resume, no open gaps in `roles.md`.
