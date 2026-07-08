@@ -1,6 +1,6 @@
 # Career Eras
 
-25+ years of software engineering, organized as four eras rather than a job-by-job list. This document captures the shape of the career; detailed company/title/date entries where confirmed live in [roles.md](roles.md) — link there rather than restating specifics here.
+27+ years of software engineering, organized as four eras rather than a job-by-job list. This document captures the shape of the career; detailed company/title/date entries where confirmed live in [roles.md](roles.md) — link there rather than restating specifics here.
 
 ## 1997–2007 — Web Development
 

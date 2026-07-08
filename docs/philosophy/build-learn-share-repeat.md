@@ -9,7 +9,7 @@ This is the core motto and operating loop behind everything Amit does.
 
 ## Why this matters
 
-Technologies, employers, and titles change over a 25+ year career. A loop-based philosophy survives all of them: it explains behavior in 1997 (learning web development) as well as behavior in 2026 (learning AI orchestration) without needing to be rewritten.
+Technologies, employers, and titles change over a 27+ year career. A loop-based philosophy survives all of them: it explains behavior in 1997 (learning web development) as well as behavior in 2026 (learning AI orchestration) without needing to be rewritten.
 
 ## How to apply
 
