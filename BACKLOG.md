@@ -8,9 +8,19 @@ Tiered roadmap for what's left, derived from the ChatGPT handover's Long-Term De
 
 Unblocks reuse of everything else; the repo is v1.0, the website is the next generated artifact (see [ADR-0001](adr/ADR-0001-knowledge-repository-first.md)).
 
-- [ ] ✋ ADR for website tech stack / hosting — a real decision, not routine content; blocks the two items below
-- [ ] 🤖 `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages (doesn't need the tech-stack ADR first, only the theme framing already in strategy)
-- [ ] ✋ Scaffold the `website/` implementation — depends on the tech-stack ADR above being resolved
+- [x] ADR for website tech stack / hosting — [ADR-0004](adr/ADR-0004-website-tech-stack.md): Astro + Vercel
+- [ ] 🤖 `docs/website/sitemap.md` — translate [website-strategy.md](docs/strategy/website-strategy.md)'s five themes into actual pages
+- [ ] 🤖 Scaffold the `website/` implementation (Astro project per ADR-0004) — sequenced after the narrative content below, so the site launches with more than stub sections
+
+## Narrative content (Phase 3) — in progress, blocks a fuller website launch
+
+New source domain, `docs/narrative/` — how the story gets told, distinct from `docs/career/` (what happened) and `docs/philosophy/` (why). Feeds the website's About/Ideas sections, plus future talks/media requests.
+
+- [ ] 🤖 Origin story
+- [ ] 🤖 Founder story
+- [ ] 🤖 Why AI / Why SaaS / Why Startups / Why Architecture (short essays)
+- [ ] 🤖 Bios — short / medium / long, plus speaker and media variants
+- [ ] 🤖 1-2 case studies (e.g. Leasi's AppFarm.io→MERN migration, or ServiceBuddy) once enough distance exists to write them honestly
 
 ## Tier 2 — Resume & LinkedIn generation (resume shipped, LinkedIn pending)
 
