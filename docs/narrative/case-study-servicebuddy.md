@@ -16,7 +16,7 @@ Moving from POC to market, with the explicit next phase being evolution into a f
 
 ## What this demonstrates
 
-Founder-level ownership of both product and technology simultaneously, and a concrete instance of "AI-first" meaning something architectural, not marketing language — see [why-saas.md](why-saas.md) and [why-ai.md](why-ai.md) for the reasoning this decision comes from.
+Founder-level ownership of both product and technology simultaneously, and a concrete instance of "AI-first" meaning something architectural, not marketing language — see [Why SaaS](why-saas.md) and [Why AI](why-ai.md) for the reasoning this decision comes from.
 
 ## How to apply
 

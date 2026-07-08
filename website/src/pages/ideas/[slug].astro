@@ -1,0 +1,31 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { renderPublicMarkdown } from '../../lib/docs';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'why-ai' }, props: { doc: 'narrative/why-ai', title: 'Why AI' } },
+    { params: { slug: 'why-saas' }, props: { doc: 'narrative/why-saas', title: 'Why SaaS' } },
+    { params: { slug: 'why-startups' }, props: { doc: 'narrative/why-startups', title: 'Why Startups' } },
+    { params: { slug: 'why-architecture' }, props: { doc: 'narrative/why-architecture', title: 'Why Architecture' } },
+  ];
+}
+
+const { doc, title } = Astro.props;
+const entry = await getEntry('docs', doc);
+const html = await renderPublicMarkdown(entry!.body ?? '', doc, { dropLeadingH1: true });
+---
+<Layout title={title}>
+  <div class="page prose">
+    <p class="eyebrow"><a href="/ideas">Ideas</a></p>
+    <h1>{title}</h1>
+    <div set:html={html} />
+  </div>
+</Layout>
+
+<style>
+  .prose :global(p) { max-width: 68ch; }
+  .eyebrow a { color: inherit; text-decoration: none; }
+  .eyebrow a:hover { color: var(--accent); }
+</style>

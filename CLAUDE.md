@@ -64,6 +64,17 @@ This repository is **public** on GitHub. Never commit: passport numbers, date of
 - **Ingest a new source document** (LinkedIn export, old resume, etc.): read it, extract facts, cross-check against existing docs for conflicts, ask the user only on genuine conflicts (not on routine additions), write confirmed facts to the right source domain, update `CHANGELOG.md`, commit.
 - **Before the first commit or push of a session:** verify `git config user.name`/`user.email` resolve correctly and the remote is the SSH URL above.
 
+## The `website/` codebase (Astro, per ADR-0004)
+
+Unlike the rest of this repo, `website/` is real application code, not markdown:
+
+- **Requires Node ≥22.** The machine's default is Node 20 (nvm) — run `nvm use 22` (or `nvm install 22` if not yet installed) before any `npm`/`astro` command in this folder.
+- Content is read from `docs/` at build time (`src/content.config.ts`, a glob loader pointed at `../docs`) — never hand-copy doc content into `website/`. New narrative/career docs are automatically available to the site once they exist.
+- `src/lib/docs.ts` strips maintainer-only sections (`## How to apply`, `## Status`, etc.) and rewrites relative `docs/*.md` links to their GitHub source before rendering publicly — any new page pulling doc content should use `renderPublicMarkdown()`, not render raw doc bodies directly.
+- Design tokens (palette, type) live in `src/layouts/Layout.astro` and intentionally reuse the resume's ink-and-slate-blue palette for brand consistency across artifacts.
+- Before considering a page done: `npm run build` and `npx astro check` must both pass clean, and check the result visually (light, dark, mobile) using the preview tools — see [docs/website/sitemap.md](docs/website/sitemap.md) for which pages are MVP vs. planned.
+- Deploying to Vercel is a ✋ item (see `BACKLOG.md`) — requires account access, don't attempt it unattended.
+
 ## Reference
 
 - [PROJECT.md](PROJECT.md) — mission, motto, positioning at a glance

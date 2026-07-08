@@ -1,0 +1,168 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Founder CTO, AI-first SaaS architect, systems builder." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} · Amit Bhushan Bhatt</title>
+  <meta name="description" content={description} />
+  <link rel="icon" href="/favicon.svg" />
+</head>
+<body>
+  <div class="skeleton">
+    <header class="site-header">
+      <a class="wordmark" href="/">Amit Bhushan Bhatt</a>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/experience">Experience</a>
+        <a href="/ideas">Ideas</a>
+        <a href="/case-studies">Case Studies</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <span>Oslo, Norway</span>
+      <span class="sep">·</span>
+      <span>Generated from <a href="https://github.com/AmitBhushanBhatt/Project-Alter-Ego">Project Alter Ego</a></span>
+    </footer>
+  </div>
+
+<style>
+  :root {
+    --paper: #FBFAF7;
+    --surface: #FFFFFF;
+    --ink: #1C1E21;
+    --ink-soft: #55585E;
+    --accent: #2B4C6F;
+    --rule: #D8D5CC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17181A;
+      --surface: #1F2123;
+      --ink: #ECEAE3;
+      --ink-soft: #B7B4AA;
+      --accent: #8FB3D9;
+      --rule: #34363A;
+    }
+  }
+
+  .skeleton {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 28px 56px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .wordmark {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 18px;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+  }
+  .site-header nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .site-header nav a {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+  }
+  .site-header nav a:hover,
+  .site-header nav a:focus-visible {
+    color: var(--accent);
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+  }
+
+  .site-footer {
+    padding: 28px 56px 40px;
+    border-top: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-soft);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .site-footer .sep { color: var(--rule); }
+  .site-footer a { color: var(--ink-soft); }
+
+  @media (max-width: 640px) {
+    .site-header, .site-footer { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</body>
+</html>
+
+<style is:global>
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+  h1, h2, h3 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-weight: 400;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 56px 96px;
+  }
+  @media (max-width: 640px) {
+    .page { padding: 40px 20px 64px; }
+  }
+  .eyebrow {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .card {
+    display: block;
+    padding: 20px 22px;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 16px;
+  }
+  .card:hover, .card:focus-visible {
+    border-color: var(--accent);
+  }
+  .card h3 { margin: 0 0 6px; font-size: 19px; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
+</style>

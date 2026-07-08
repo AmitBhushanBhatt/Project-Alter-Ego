@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const ideas = [
+  { slug: 'why-ai', title: 'Why AI', teaser: 'Not the trend — the current era’s most interesting material for building systems that create leverage.' },
+  { slug: 'why-saas', title: 'Why SaaS', teaser: 'Build a system once, let it serve many, keep improving it instead of rebuilding it per client.' },
+  { slug: 'why-startups', title: 'Why Startups', teaser: 'The distance between a decision and its consequence is short, and that’s where real learning happens.' },
+  { slug: 'why-architecture', title: 'Why Architecture', teaser: 'The discipline of making complexity simple enough to actually build.' },
+];
+---
+<Layout title="Ideas" description="Why AI, why SaaS, why startups, why architecture.">
+  <div class="page">
+    <p class="eyebrow">Ideas</p>
+    <h1>The reasoning, not just the résumé.</h1>
+    <div class="list">
+      {ideas.map((idea) => (
+        <a class="card" href={`/ideas/${idea.slug}`}>
+          <h3>{idea.title}</h3>
+          <p>{idea.teaser}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .list { margin-top: 24px; }
+</style>

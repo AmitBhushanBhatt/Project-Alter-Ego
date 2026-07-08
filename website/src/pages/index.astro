@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Home">
+  <div class="page hero">
+    <p class="eyebrow">Founder CTO · AI-First SaaS Architect · Startup CTO</p>
+    <h1>Systems builder, currently building AI-first.</h1>
+    <p class="lede">
+      27+ years of software engineering, architecture, and technology leadership — web,
+      enterprise platforms, cloud &amp; integration, and now AI-native SaaS. Currently CPTO at
+      ServiceBuddy and building ventures through Stealth (WIP), following CTO roles at
+      Cognosic and Leasi.
+    </p>
+    <p class="motto">Build. Learn. Share. Repeat.</p>
+
+    <div class="entry-points">
+      <a class="card" href="/about"><h3>About</h3><p>The through-line, the philosophy, and the values behind the work.</p></a>
+      <a class="card" href="/experience"><h3>Experience</h3><p>27 years across four technology eras, from web engineering to AI-native SaaS.</p></a>
+      <a class="card" href="/ideas"><h3>Ideas</h3><p>Why AI, why SaaS, why startups, why architecture — the reasoning, not just the résumé.</p></a>
+      <a class="card" href="/case-studies"><h3>Case Studies</h3><p>Two concrete builds: migrating Leasi off low-code, and building ServiceBuddy AI-first.</p></a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero .lede {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .motto {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--accent);
+    margin: 28px 0 40px;
+  }
+  .entry-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 560px) {
+    .entry-points { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const studies = [
+  { slug: 'leasi', title: 'Migrating Leasi off AppFarm.io', teaser: 'Reclaiming architectural control: moving a live multi-tenant SaaS platform from a low-code foundation onto MERN + Azure iPaaS.' },
+  { slug: 'servicebuddy', title: 'Building ServiceBuddy AI-First From Day One', teaser: 'Embedding AI into the core matching mechanic of a services marketplace, rather than bolting it on afterward.' },
+];
+---
+<Layout title="Case Studies" description="Concrete project write-ups, not employment history.">
+  <div class="page">
+    <p class="eyebrow">Case Studies</p>
+    <h1>What actually got built.</h1>
+    <div class="list">
+      {studies.map((s) => (
+        <a class="card" href={`/case-studies/${s.slug}`}>
+          <h3>{s.title}</h3>
+          <p>{s.teaser}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .list { margin-top: 24px; }
+</style>

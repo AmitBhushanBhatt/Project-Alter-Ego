@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contact" description="Get in touch.">
+  <div class="page">
+    <p class="eyebrow">Contact</p>
+    <h1>Oslo, Norway.</h1>
+    <ul class="links">
+      <li><a href="mailto:amitbhushanbhatt@hotmail.com">amitbhushanbhatt@hotmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/amitbhushanbhatt/">linkedin.com/in/amitbhushanbhatt</a></li>
+      <li><a href="https://github.com/AmitBhushanBhatt">github.com/AmitBhushanBhatt</a></li>
+    </ul>
+    <p class="note">Open to advisory, board-level, and founder-to-founder conversations around technology strategy, platform architecture, and engineering leadership.</p>
+  </div>
+</Layout>
+
+<style>
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .links a { font-size: 18px; }
+  .note { color: var(--ink-soft); max-width: 55ch; }
+</style>

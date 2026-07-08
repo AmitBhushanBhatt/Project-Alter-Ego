@@ -1,0 +1,54 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { renderPublicMarkdown } from '../lib/docs';
+
+const originStory = await getEntry('docs', 'narrative/origin-story');
+const storyHtml = await renderPublicMarkdown(originStory!.body ?? '', 'narrative/origin-story', { dropLeadingH1: true });
+---
+<Layout title="About" description="Origin story, philosophy, and the values behind the work.">
+  <div class="page prose">
+    <p class="eyebrow">About</p>
+    <h1>Origin story</h1>
+    <div set:html={storyHtml} />
+
+    <div class="values-block">
+      <h2>Core values</h2>
+      <p class="ink-soft">The filter behind every decision — see the full <a href="https://github.com/AmitBhushanBhatt/Project-Alter-Ego/blob/main/docs/philosophy/decision-framework.md">Decision Framework</a>.</p>
+      <ul>
+        <li>Curiosity over certainty</li>
+        <li>Builders over commentators</li>
+        <li>Simplicity over complexity</li>
+        <li>Learning through experimentation</li>
+        <li>Technology in service of people</li>
+        <li>Long-term thinking</li>
+        <li>Integrity and transparency</li>
+      </ul>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .prose h1 { margin-top: 0; }
+  .prose :global(p) {
+    max-width: 68ch;
+  }
+  .values-block {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+  .values-block .ink-soft {
+    color: var(--ink-soft);
+    font-size: 14.5px;
+  }
+  .values-block ul {
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 32px;
+  }
+  .values-block li { margin-bottom: 8px; break-inside: avoid; }
+  @media (max-width: 560px) {
+    .values-block ul { columns: 1; }
+  }
+</style>

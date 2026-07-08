@@ -10,7 +10,7 @@
 - `prompts/` — reusable prompts for generating artifacts from this repository.
 - `scripts/` / `tools/` — automation that reads this repo to produce artifacts.
 - `resume/` — the generated resume output (regenerated from `docs/resume/` + source domains, never hand-edited directly).
-- `website/` — the generated website output (or its build source, once it exists).
+- `website/` — the Astro website project (ADR-0004). Real application code, not markdown — reads content from `docs/` at build time rather than duplicating it. See `CLAUDE.md`'s "The `website/` codebase" section before working here.
 - `vault/` — **design/architecture docs only, never data.** The Vault itself (banking, insurance, chats, email, and other private material) is a separate, private, local-first project that never enters this or any repository — see [ADR-0003](../../adr/ADR-0003-vault-architecture.md).
 
 ## Two kinds of `docs/` folders

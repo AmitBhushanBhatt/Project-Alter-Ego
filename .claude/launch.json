@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "website",
+      "runtimeExecutable": "/Users/amitbhatt/.nvm/versions/node/v22.23.1/bin/npm",
+      "runtimeArgs": ["run", "dev", "--", "--host"],
+      "port": 4321,
+      "cwd": "/Users/amitbhatt/development/alter-ego/website"
+    }
+  ]
+}

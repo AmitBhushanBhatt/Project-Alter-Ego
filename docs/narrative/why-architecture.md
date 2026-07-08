@@ -4,7 +4,7 @@ Because architecture is the discipline of making complexity simple enough to act
 
 TOGAF (2015), SAFe (2020), and two decades of solution/enterprise architecture roles weren't collected as credentials for their own sake — they're the accumulated vocabulary for answering that question at increasing scale: from a single application's design, to Cegal's BizTalk-to-Azure-iPaaS migration, to Competentia's global digital platform spanning Stavanger, the USA, Australia, and the Middle East. The scale changed constantly; the underlying move — find the real structure, name it, build toward it deliberately — never did.
 
-Architecture is also where the "systems builder" identity (see [systems-thinking.md](../philosophy/systems-thinking.md)) is most literal. Software architecture, business architecture, team architecture, and now AI system architecture are the same intellectual move applied to different materials. Learning architecture as a discipline rather than a job function is what makes the identity portable across eras — this is the one that survives the "identity before technology" principle most directly.
+Architecture is also where the "systems builder" identity (see [systems thinking](../philosophy/systems-thinking.md)) is most literal. Software architecture, business architecture, team architecture, and now AI system architecture are the same intellectual move applied to different materials. Learning architecture as a discipline rather than a job function is what makes the identity portable across eras — this is the one that survives the "identity before technology" principle most directly.
 
 ## How to apply
 

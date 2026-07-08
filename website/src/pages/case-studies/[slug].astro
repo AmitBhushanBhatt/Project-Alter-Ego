@@ -1,0 +1,29 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { renderPublicMarkdown } from '../../lib/docs';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'leasi' }, props: { doc: 'narrative/case-study-leasi', title: 'Migrating Leasi off AppFarm.io' } },
+    { params: { slug: 'servicebuddy' }, props: { doc: 'narrative/case-study-servicebuddy', title: 'Building ServiceBuddy AI-First From Day One' } },
+  ];
+}
+
+const { doc, title } = Astro.props;
+const entry = await getEntry('docs', doc);
+const html = await renderPublicMarkdown(entry!.body ?? '', doc, { dropLeadingH1: true });
+---
+<Layout title={title}>
+  <div class="page prose">
+    <p class="eyebrow"><a href="/case-studies">Case Studies</a></p>
+    <h1>{title}</h1>
+    <div set:html={html} />
+  </div>
+</Layout>
+
+<style>
+  .prose :global(p) { max-width: 68ch; }
+  .eyebrow a { color: inherit; text-decoration: none; }
+  .eyebrow a:hover { color: var(--accent); }
+</style>

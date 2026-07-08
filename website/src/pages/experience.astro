@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const roles = [
+  {
+    title: 'Founder, CEO & Managing Director',
+    org: 'Stealth (WIP)',
+    when: 'Jan 2026 – Present',
+    note: 'Concurrent with ServiceBuddy. Holding and venture entity for long-term equity, early-stage products, and selective architecture engagements.',
+  },
+  {
+    title: 'CPTO',
+    org: 'ServiceBuddy',
+    when: 'Jan 2026 – Present',
+    note: 'Leading Product and Technology end-to-end for an AI-first services marketplace, from POC to market.',
+  },
+  {
+    title: 'Chief Technology Officer',
+    org: 'Cognosic',
+    when: 'Oct 2025 – Mar 2026',
+    note: 'AI-assisted SaaS platform for university curriculum design, built on OpenAI, GCP, and Neo4j.',
+  },
+  {
+    title: 'Chief Technology Officer',
+    org: 'Leasi',
+    when: 'Oct 2023 – Sep 2025',
+    note: 'Multi-tenant SaaS platform; led the migration off AppFarm.io onto MERN + Azure iPaaS.',
+  },
+  {
+    title: 'Integration Lead',
+    org: 'Cegal',
+    when: 'May 2022 – Sep 2023',
+    note: 'Enterprise integration modernization, migrating from BizTalk 2016 to Azure iPaaS.',
+  },
+];
+
+const eras = [
+  { name: 'AI-Native SaaS & Founder CTO', when: '2025 – Present', note: 'AI-first products, founder/CPTO leadership, RAG, agentic workflows.' },
+  { name: 'Modern SaaS, Cloud & Integration', when: '2019 – 2025', note: 'Azure architecture, API-first platforms, enterprise integration, platform modernization.' },
+  { name: 'Enterprise Digital Platforms', when: '2008 – 2018', note: 'SharePoint, Adobe Experience Manager, Sitecore, offshore delivery, team-building.' },
+  { name: 'Web Engineering Foundations', when: '1997 – 2007', note: '.NET, PHP, JavaScript, early internet platforms.' },
+];
+---
+<Layout title="Experience" description="27 years across four technology eras.">
+  <div class="page">
+    <p class="eyebrow">Experience</p>
+    <h1>27 years, four eras, one loop.</h1>
+    <p class="intro">The full detail lives in the repository's <a href="https://github.com/AmitBhushanBhatt/Project-Alter-Ego/blob/main/docs/career/roles.md">roles.md</a>. This page is the readable version.</p>
+
+    <h2>Recent roles</h2>
+    <ol class="roles">
+      {roles.map((r) => (
+        <li>
+          <div class="role-head">
+            <span class="role-title">{r.title} — {r.org}</span>
+            <span class="role-when">{r.when}</span>
+          </div>
+          <p>{r.note}</p>
+        </li>
+      ))}
+    </ol>
+
+    <h2>Career evolution</h2>
+    <ol class="eras">
+      {eras.map((e) => (
+        <li>
+          <div class="role-head">
+            <span class="role-title">{e.name}</span>
+            <span class="role-when">{e.when}</span>
+          </div>
+          <p>{e.note}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Layout>
+
+<style>
+  .intro { color: var(--ink-soft); max-width: 60ch; }
+  h2 { font-size: 20px; margin-top: 48px; }
+  ol.roles, ol.eras {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  ol.roles li, ol.eras li {
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .role-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .role-title { font-weight: 700; }
+  .role-when {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  ol.roles p, ol.eras p {
+    margin: 6px 0 0;
+    color: var(--ink-soft);
+    font-size: 14.5px;
+  }
+</style>

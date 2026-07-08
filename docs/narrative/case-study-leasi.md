@@ -14,7 +14,7 @@ Planned and executed the migration to the new stack while the platform kept runn
 
 ## What this demonstrates
 
-Architectural conviction under real constraints — choosing to migrate a live multi-tenant platform rather than staying comfortable on a low-code foundation, and doing it without a green light to pause the business. It's also an early, concrete example of AI-assisted engineering being adopted in practice, not just discussed — see [why-ai.md](why-ai.md) for how that theme continued into later roles.
+Architectural conviction under real constraints — choosing to migrate a live multi-tenant platform rather than staying comfortable on a low-code foundation, and doing it without a green light to pause the business. It's also an early, concrete example of AI-assisted engineering being adopted in practice, not just discussed — see [Why AI](why-ai.md) for how that theme continued into later roles.
 
 ## How to apply
 
