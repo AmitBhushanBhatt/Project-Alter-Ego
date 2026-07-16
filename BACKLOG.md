@@ -24,11 +24,12 @@ New source domain, `docs/narrative/` — how the story gets told, distinct from 
 - [x] Bios — short / medium / long, plus speaker and media variants
 - [x] 2 case studies (Leasi's AppFarm.io→MERN migration, ServiceBuddy)
 
-## Tier 2 — Resume & LinkedIn generation (resume shipped, LinkedIn pending)
+## Tier 2 — Resume, cover letter & LinkedIn generation (resume + cover letter shipped, LinkedIn pending)
 
 Repeatable generation processes, not one-off hand-written docs, so they can't drift from the source domains.
 
 - [x] Resume generation process (`docs/resume/format.md` + `prompts/resume-generation.md`) — first draft generated: `resume/resume-2026.md` + styled `resume/resume-2026.html` / `resume/resume-2026.pdf`
+- [x] Cover letter generation process (`docs/resume/cover-letter-format.md` + `prompts/cover-letter-generation.md`) — template generated: `resume/cover-letter-2026.md`. Unlike the resume, this is a per-application template with `[Company]`/`[Role]` placeholders, not a master document — re-tailor per real application
 - [ ] 🤖 LinkedIn generation process (`docs/linkedin/format.md` + `prompts/linkedin-generation.md`) — process exists, not yet run; same pattern as the resume, straightforward to execute
 - [ ] 🤖 Condensed 2-page resume variant (per `docs/resume/format.md`'s condensed-resume guidance) for casual sharing, alongside the full 6-page version
 
